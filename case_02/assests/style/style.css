@@ -63,7 +63,7 @@ main > section > p {
 
 main > section > section:first-child {
     border: 1px solid black;
-    height: 200px;
+    height: 300px;
     position: relative;
 }
 
@@ -75,25 +75,35 @@ main > section > section:first-child > div {
 }
 
 main > section > section:first-child > div:nth-child(1){
-    background: url("../img/Apartment rent.gif");
-    left: 0;
+    background-size: cover;
+    background: url("../img/Apartment rent.gif") no-repeat center;
+
 }
 main > section > section:first-child > div:nth-child(2){
-    background: url("../img/Apartment rent.gif");
+    background-size: cover;
+    background: url("../img/Apartment rent.gif") no-repeat center;
     left: calc(100%/3);
 }
 main > section > section:first-child > div:nth-child(3){
-    background: url("../img/Apartment rent.gif");
+    background-size: cover;
+    background: url("../img/Apartment rent.gif") no-repeat center;
     right: 0;
 }
 footer {
     height: 60px;
     background-color: #595555;
+    position: relative;
 }
 
 footer > h4 {
-    text-align: center;
-    margin-top: 0;
-    padding-top: 20px;
     color: white;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
